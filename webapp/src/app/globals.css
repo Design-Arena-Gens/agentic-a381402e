@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  background-color: #020617;
+  color: #e2e8f0;
+  font-feature-settings: "liga" 1, "kern" 1;
+}
+
+::selection {
+  background-color: rgba(56, 189, 248, 0.25);
+  color: inherit;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
